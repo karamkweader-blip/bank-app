@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "664074394020",
+    "project_id": "complaints-app-4b533",
+    "storage_bucket": "complaints-app-4b533.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664074394020:android:6ad324aaccd56ef8990931",
+        "android_client_info": {
+          "package_name": "com.example.buyro_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuhhumkzDx6GAH5d9yWHYXpJmxWI3igOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
