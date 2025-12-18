@@ -1,21 +1,40 @@
 import 'dart:convert';
 import 'package:bank_app/core/constant/app_links.dart';
+import 'package:bank_app/core/services/services.dart';
 import 'package:bank_app/data/model/account_model.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:get/get.dart';
 import 'package:bank_app/data/datasource/remote/remote_data_source.dart';
+import 'package:shared_preferences/shared_preferences.dart'; // 🔑 إضافة المكتبة
+
 
 class RemoteDataSource extends GetxService {
-  
-  // إنشاء رأس الطلب (Header) مع التوكن
-  Map<String, String> _getHeaders() {
-    return {
-      'Authorization': 'Bearer ${AppLink.staticToken}',
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-    };
-  }
+
+// 1. تعريف نسخة من SharedPreferences
+ late SharedPreferences _sharedPreferences;
+
+ // 2. التهيئة (Initialization)
+ @override
+ void onInit() {
+ // جلب نسخة MyServices المتاحة بالفعل
+ MyServices myServices = Get.find<MyServices>();
+ _sharedPreferences = myServices.sharedPreferences;
+ super.onInit();
+ }
+
+Map<String, String> _getHeaders() {
+// نفترض أن مفتاح التوكن هو 'user_token'
+final String? token = _sharedPreferences.getString('user_token'); 
+// إذا لم نجد التوكن، نستخدم قيمة فارغة أو نضع قيمة افتراضية
+final String authToken = token ?? ''; 
+
+ return {
+'Authorization': 'Bearer $authToken', // 🔑 استخدام التوكن المجلوب
+ 'Accept': 'application/json',
+ 'Content-Type': 'application/json',
+ };
+ }
 
   // 1. جلب حسابات المستخدم
   Future<AccountsResponseModel?> getUserAccounts() async {
