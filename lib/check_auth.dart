@@ -1,5 +1,6 @@
 import 'package:bank_app/view/screen/auth/login.dart';
 import 'package:bank_app/view/screen/home/home.dart';
+import 'package:bank_app/view/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -26,7 +27,7 @@ class CheckAuth extends StatelessWidget {
         } else {
           //HomePage
           //ComplaintsPage
-          return snapshot.data == true ? HomePage() : const Login();
+          return snapshot.data == true ? HomeScreen() :  HomeScreen();
         }
       },
     );

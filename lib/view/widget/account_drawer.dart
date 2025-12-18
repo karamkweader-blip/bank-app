@@ -1,4 +1,4 @@
-import 'package:bank_app/controller/home/home_controller.dart';
+import 'package:bank_app/controller/home_controller.dart';
 import 'package:bank_app/view/screen/home/language_page.dart';
 import 'package:bank_app/view/widget/account_menu-item.dart';
 import 'package:flutter/material.dart';
@@ -50,7 +50,7 @@ class AccountDrawer extends StatelessWidget {
               color: Colors.red,
               onTap: () {
                 Get.back();
-                controller.logout();
+              //  controller.logout();
               },
             ),
           ],
