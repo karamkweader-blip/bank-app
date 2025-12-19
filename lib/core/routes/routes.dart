@@ -13,11 +13,11 @@ class AppRoute {
   static const String mainpage = "/mainpage";
   static const String changePassword = "/changePassword";
 
+//app
+static const notifications = "/notifications";
+static const transfer = "/transfer";
+static const childAccounts = "/childAccounts";
 
-
-   static const addComplaint = "/addComplaint";
-   static const notifications = "/notifications";
-
-    static const complaintDetails = "/complaintDetails";
+   
 
 }

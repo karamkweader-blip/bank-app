@@ -13,7 +13,7 @@ class SendFcmTokenRemote {
       return;
     } else {
       final response = await http.post(
-        Uri.parse('${baseURL}store-fcm-token'),
+        Uri.parse('${baseURL}user/store-fcm-token'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',

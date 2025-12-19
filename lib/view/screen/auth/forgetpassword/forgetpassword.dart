@@ -1,4 +1,4 @@
-import 'package:bank_app/controller/auth/forgetpassword_controller.dart';
+import 'package:bank_app/controller/auth/forgetpassword/forgetpassword_controller.dart';
 import 'package:bank_app/core/constant/color.dart';
 import 'package:bank_app/core/functions/validinput.dart';
 import 'package:bank_app/view/widget/auth/custombuttonauth.dart';

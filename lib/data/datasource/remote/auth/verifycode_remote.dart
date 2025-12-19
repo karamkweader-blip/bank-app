@@ -15,7 +15,7 @@ class VerifyCodeRemote {
 
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body);
-      final token = json['data']['token'];
+      final token = json['token'];
       return token;
       // return true; // تحقق ناجح
     } else {

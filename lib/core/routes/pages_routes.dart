@@ -6,8 +6,10 @@ import 'package:bank_app/view/screen/auth/forgetpassword/success_resetpassword.d
 import 'package:bank_app/view/screen/auth/login.dart';
 import 'package:bank_app/view/screen/auth/signup.dart';
 import 'package:bank_app/view/screen/auth/verifycode.dart';
-import 'package:bank_app/view/screen/home/home.dart';
-import 'package:bank_app/view/screen/home_screen.dart';
+import 'package:bank_app/view/screen/home/children_page.dart';
+import 'package:bank_app/view/screen/home/home_screen.dart';
+import 'package:bank_app/view/screen/home/notifications_page.dart';
+import 'package:bank_app/view/screen/home/transfer_page.dart';
 import 'package:flutter/material.dart';
 
 
@@ -22,5 +24,9 @@ Map<String, Widget Function(BuildContext)> routes = {
   AppRoute.successResetpassword: (context) => const SuccessResetPassword(),
   ////inside app
 AppRoute.home: (context) =>  HomeScreen(),
+AppRoute.notifications :(context) => NotificationsPage(),
+AppRoute.transfer :(context) => TransferScreen(),
+AppRoute.childAccounts :(context) => ChildAccountsScreen(),
+
 
 };

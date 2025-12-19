@@ -1,4 +1,4 @@
-import 'package:bank_app/data/datasource/remote/notifications/notifications_remote.dart';
+import 'package:bank_app/data/datasource/remote/app/notifications/notifications_remote.dart';
 import 'package:get/get.dart';
 
 class NotificationsController extends GetxController {
@@ -18,7 +18,6 @@ class NotificationsController extends GetxController {
     try {
       notifications.value = await _service.getNotifications();
         if (notifications.isNotEmpty) {
-        await _service.markAllAsRead();
         for (var n in notifications) {
           n['is_read'] = 1;
         }
@@ -28,9 +27,9 @@ class NotificationsController extends GetxController {
       isLoading.value = false;
     }
   }
-  void markAllAsRead() async {
-    await _service.markAllAsRead();
-  }
+  // void markAllAsRead() async {
+  //   await _service.markAllAsRead();
+  // }
 
     // void markAsRead(int id) async {
   //   await _service.markAsRead(id);

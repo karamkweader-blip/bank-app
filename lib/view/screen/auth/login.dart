@@ -69,13 +69,6 @@ class Login extends StatelessWidget {
                         iconData: Icons.lock_outline,
                         labeltext: "19".tr,
                       ),
-              
-                InkWell(
-                  onTap: () {
-                    controller.goToForgetPassword();
-                  },
-                  child: Text("14".tr, textAlign: TextAlign.right),
-                ),
                 CustomButtomAuth(
                   text: "15".tr,
                   onPressed: () {
