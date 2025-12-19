@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "664074394020",
-    "project_id": "complaints-app-4b533",
-    "storage_bucket": "complaints-app-4b533.firebasestorage.app"
+    "project_number": "615817560734",
+    "project_id": "bank-app-da749",
+    "storage_bucket": "bank-app-da749.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:664074394020:android:6ad324aaccd56ef8990931",
+        "mobilesdk_app_id": "1:615817560734:android:6ad61f6596f8aa3439718f",
         "android_client_info": {
           "package_name": "com.example.buyro_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDuhhumkzDx6GAH5d9yWHYXpJmxWI3igOc"
+          "current_key": "AIzaSyCr85V0WgRiaknqI3HQd1ny3MF-2XN5NKA"
         }
       ],
       "services": {

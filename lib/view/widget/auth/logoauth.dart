@@ -1,3 +1,4 @@
+import 'package:bank_app/core/constant/color.dart';
 import 'package:bank_app/core/constant/imgaeasset.dart';
 import 'package:flutter/material.dart';
 
@@ -8,10 +9,10 @@ class LogoAuth extends StatelessWidget {
   Widget build(BuildContext context) {
     return CircleAvatar(
       radius: 80,
-      backgroundColor: Colors.green,
+      backgroundColor: AppColor.primaryColor,
       child: Padding(
         padding: const EdgeInsets.all(0), // Border radius
-        child:  Image.asset(AppImageAsset.logo)
+        child: Image.asset(AppImageAsset.logo),
       ),
     );
   }

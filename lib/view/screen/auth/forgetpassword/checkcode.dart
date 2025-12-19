@@ -1,4 +1,4 @@
-import 'package:bank_app/controller/auth/checkcode_controller.dart';
+import 'package:bank_app/controller/auth/forgetpassword/checkcode_controller.dart';
 import 'package:bank_app/core/constant/color.dart';
 import 'package:bank_app/view/widget/auth/customtextbodyauth.dart';
 import 'package:bank_app/view/widget/auth/customtexttitleauth.dart';

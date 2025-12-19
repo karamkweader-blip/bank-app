@@ -1,6 +1,6 @@
 class AppLink {
   // أنت أرسلتها كـ const String baseURL = "http://192.168.50.143:8000/api/";
-  static const String baseUrl = "http://192.168.50.154:8000/api/";
+  static const String baseUrl = "http://10.42.52.83:8000/api/";
 static const String openTicket = "${baseUrl}user/open-ticket";
   
   // يجب أن تكون هذه الدالة قابلة لاستقبال ID التذكرة

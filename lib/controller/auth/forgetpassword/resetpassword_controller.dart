@@ -1,5 +1,5 @@
 import 'package:bank_app/core/routes/routes.dart';
-import 'package:bank_app/data/datasource/remote/auth/resetpassword_reomte.dart';
+import 'package:bank_app/data/datasource/remote/auth/forget/resetpassword_reomte.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

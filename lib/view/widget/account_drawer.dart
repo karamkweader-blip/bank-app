@@ -1,6 +1,6 @@
-import 'package:bank_app/controller/home_controller.dart';
+import 'package:bank_app/controller/app/home_controller.dart';
 import 'package:bank_app/view/screen/home/language_page.dart';
-import 'package:bank_app/view/widget/account_menu-item.dart';
+import 'package:bank_app/view/widget/account_menu_item.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -38,7 +38,7 @@ class AccountDrawer extends StatelessWidget {
                 Get.defaultDialog(
                   title: "حول التطبيق",
                   middleText:
-                      " complaints app   للتواصل karamalah.kweader@gmail.com",
+                      " تطبيق بنكي ذكي لإدارة الحسابات، تحويل الأموال بسرعة، وفتح تذاكر دعم بكل سهولة وأمان.",
                 );
               },
             ),
@@ -50,7 +50,7 @@ class AccountDrawer extends StatelessWidget {
               color: Colors.red,
               onTap: () {
                 Get.back();
-              //  controller.logout();
+                controller.logout();
               },
             ),
           ],
