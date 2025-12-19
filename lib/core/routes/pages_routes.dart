@@ -7,6 +7,7 @@ import 'package:bank_app/view/screen/auth/login.dart';
 import 'package:bank_app/view/screen/auth/signup.dart';
 import 'package:bank_app/view/screen/auth/verifycode.dart';
 import 'package:bank_app/view/screen/home/home.dart';
+import 'package:bank_app/view/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -20,6 +21,6 @@ Map<String, Widget Function(BuildContext)> routes = {
   AppRoute.resetPassword: (context) => const ResetPassword(),
   AppRoute.successResetpassword: (context) => const SuccessResetPassword(),
   ////inside app
-AppRoute.home: (context) =>  HomePage(),
+AppRoute.home: (context) =>  HomeScreen(),
 
 };
